@@ -229,7 +229,7 @@ public class GapAnnotate {
 		}
 		return index;
 	}
-	private double TOLERANCE = 0.1;
+	private double TOLERANCE = 0.05;
 	public int getMatchedPeak(List<Double> peakMassList, double tarPeak, double minimum){
 //		double maxPeak = -1;//, maxDelta = TOLERANCE+1;
 		int matIndex = -1;

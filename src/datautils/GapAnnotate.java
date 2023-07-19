@@ -39,13 +39,15 @@ public class GapAnnotate {
 			307.0903,	//	-NLoss-NLoss:		N-Glycoylneuraminic acid	C11O9NH17	307.0903	307.26	(Neu5Gc)
 			329.0734,	//	Na3-NLoss-NLoss:	Na salt 					C11O9NH16Na	329.0734	329.24
 	};
+	//
+
 	
-	public static final double oxoniums[] = {
-			126.055-PROTON,	//	C6H7NO2+	[HexNAc - C2H6O3] 
-			138.055-PROTON,	//	C7H8NO2+	[HexNAc - CH6O3]
-			144.065-PROTON,	//	C6H10NO3+	[HexNAc - C2H4O2]	
-			168.066-PROTON,	//	C8H10NO3+	[HexNAc - 2H2O]
-			186.076-PROTON,	//	C5H12NO4+	[HexNAc - H2O]
+	public static final double oxoniums[] = { 
+			126.055-PROTON,	//	C6H7NO2+	[HexNAc - C2H6O3] 78.032
+			138.055-PROTON,	//	C7H8NO2+	[HexNAc - CH6O3]66.032
+			144.065-PROTON,	//	C6H10NO3+	[HexNAc - C2H4O2]60.022	
+			168.066-PROTON,	//	C8H10NO3+	[HexNAc - 2H2O]36.021
+			186.076-PROTON,	//	C5H12NO4+	[HexNAc - H2O]18.011
 //			204.087,	//	C8H14NO5+	[HexNAc]
 			274.092-PROTON,	//	C11H6NO7+	[Neu5Ac-H2O]
 //			292.103,	//	C11H18NO8+	[Neu5Ac]
@@ -208,6 +210,7 @@ public class GapAnnotate {
 //		Iterator<Double> iter = annotations.keySet().iterator();
 //		while( iter.hasNext() ) System.out.println(iter.next());
 	}
+	
 	public int biSearchPeak(List<Double> pairs, double left, int count) {
 		int index;
 		if( left <= pairs.get(0) )
